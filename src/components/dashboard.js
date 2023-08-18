@@ -1,28 +1,25 @@
 import { useEffect, useState } from "react";
 import CRUD from "./crud";
 import Login from "./login";
-import NoPage from "./nopage";
+import MenuBar from "./menubar";
 
 const Dashboard = () => {
-    debugger;
+  debugger;
   const [authenticated, setauthenticated] = useState(null);
   useEffect(() => {
     const loggedInUser = sessionStorage.getItem("UserData");
-debugger;
-    if (loggedInUser ) {
+    if (loggedInUser) {
       setauthenticated(loggedInUser);
-      
     }
   }, []);
 
-  
   if (!authenticated) {
-  <Login/>
-
+    <Login />;
   } else {
     return (
       <div>
-        <CRUD/>
+        <MenuBar />
+        <CRUD />
       </div>
     );
   }

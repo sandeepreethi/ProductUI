@@ -172,16 +172,6 @@ function CRUD() {
         <div className="col-sm-11">
           <h1 className="text-center">CRUD OPERATION </h1>
         </div>
-        <div className="col-sm-1">
-          <div className="">
-            <input
-              type="button"
-              className="btn btn-link "
-              onClick={logout}
-              value="Logout"
-            />
-          </div>
-        </div>
       </div>
       <div className="container border border-dark addScroll">
         <div className="row p-1 bg-info text-dark border border-dark">

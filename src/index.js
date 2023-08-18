@@ -7,6 +7,8 @@ import "bootstrap/dist/css/bootstrap.css";
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Login from './components/login';
 import Dashboard from './components/dashboard';
+import Logout from './components/logout';
+import Azure from './components/azure';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -16,8 +18,9 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route index element={<App />} />
-        <Route path="login" element={<Login />} />
         <Route path="dashboard" element={<Dashboard />} />
+        <Route path="azure" element={<Azure />} />
+        <Route path="login" element={<Logout />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

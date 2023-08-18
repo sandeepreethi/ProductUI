@@ -1,6 +1,11 @@
-
+import React, { Component } from 'react';
+import MenuBar from './menubar';
 function NoPage  ()  {
-    return <h1>You are not Authenticated</h1>;
-  };
-  
-  export default NoPage;
+    debugger;
+  return (<div>
+      <MenuBar/>
+  </div>
+      )
+};
+
+export default NoPage;
